@@ -1,0 +1,30 @@
+{
+  "name": "sigil",
+  "version": "0.1.0",
+  "description": "Agent identity + reputation on ERC-8004",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.ts --network baseTestnet",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": ["agent", "identity", "reputation", "erc-8004", "web3", "ai"],
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^22.0.0",
+    "chai": "^4.4.0",
+    "chalk": "^4.1.2",
+    "ethers": "^6.13.0",
+    "hardhat": "^2.22.0",
+    "typescript": "^5.5.0"
+  }
+}
